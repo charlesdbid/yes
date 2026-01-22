@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Will You Be My Valentine?</title>
+  <link rel="stylesheet" href="valentine.css">
+</head>
+<body>
+
+  <audio autoplay loop>
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="hearts">
+    <span>❤️</span>
+    <span>💖</span>
+    <span>💕</span>
+    <span>💘</span>
+    <span>❤️</span>
+    <span>💖</span>
+    <span>💕</span>
+  </div>
+
+  <div class="card">
+    <h1>Hi Asawa Nako ❤️‍🔥</h1>
+
+    <p class="message">
+      Kabalo ko na layo tang duha asawa nako d ta magkauban karon nga valentines pero d na makapugong sa akoa nga mag spend tag time kitang duha
+    </p>
+
+    <h2>Will you be my Valentine? </h2>
+
+    <div class="buttons">
+      <button class="yes" onclick="sayYes()">Yes 💖</button>
+      <button class="no" onclick="sayNo()">No 🙈</button>
+    </div>
+
+    <p id="response"></p>
+
+    <div class="image-box">
+      <img src="flowers.jpg" alt="flowers">
+    </div>
+  </div>
+
+  <script>
+    function sayYes() {
+      document.getElementById("response").innerHTML =
+        "yayyyy! iloveyouuuuuuuuuuuuuu asawaaa nakooo ❤️💛♥️💜";
+    }
+
+    function sayNo() {
+      document.getElementById("response").innerHTML =
+        "D pwede no 😝";
+    }
+  </script>
+
+</body>
+</html>
